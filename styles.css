@@ -91,15 +91,15 @@ section {
 
 /* Add accent color to section headings */
 h2 {
-  color: #2E9DF7; /* Primary blue */
+  color: #fff; /* White text for contrast */
   margin-top: 0;
   font-weight: bold;
 }
 
 /* Call-to-Action Section Styles */
 .call-to-action {
-  background-color: #FFC907; /* Primary Yellow */
-  color: #222;
+  background-color: #1a1a1a; /* Primary Yellow */
+  color: #ffffff; /* White text for contrast */
   text-align: center;
   padding: 30px 20px;
 }
@@ -116,8 +116,8 @@ h2 {
 /* Donate Button Styles */
 .donate-button {
   display: inline-block;
-  background-color: #4FCB53; /* Green */
-  color: #fff;
+  background-color: #ffc907; /* Primary Yellow */
+  color: #1a1a1a;
   padding: 14px 32px;
   text-decoration: none;
   border-radius: 6px;
@@ -132,7 +132,7 @@ h2 {
 
 /* Change button color when hovered */
 .donate-button:hover {
-  background-color: #159A48; /* Dark Green */
+  background-color: #ff902a; /* Secondary Orange */
   transform: translateY(-2px) scale(1.04); /* Slight lift */
 }
 
@@ -204,14 +204,19 @@ section {
   .impact-content {
     display: flex;           /* Place items in a row */
     align-items: center;     /* Vertically center items */
-    justify-content: center; /* Center the whole group */
+    justify-content: flex-start; /* Align items to the left */
     gap: 28px;               /* Space between image and text */
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
   }
 
+  /* Make sure the image stays on the left and text on the right */
   .impact-image {
-    width: 300px;
+    order: 0;                /* Image appears first (left) */
+  }
+
+  .impact-content p {
+    order: 1;                /* Text appears second (right) */
   }
 }
