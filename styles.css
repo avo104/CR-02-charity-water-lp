@@ -37,6 +37,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Proxima Nova', Arial, sans-serif;
 }
 
+/* Make all paragraph text use Proxima Nova font */
+p {
+  font-family: 'Proxima Nova', Arial, sans-serif;
+}
+
 /* Add a slight shadow and rounded corners to each section for depth */
 section {
   background: #fff; /* White background for sections */
@@ -83,8 +88,8 @@ section {
 
 /* Story Section Styles */
 .story {
-  background-color: #8BD1CB; /* Secondary Light Blue */
-  color: #222;
+  background-color: #1a1a1a;
+  color: #fff;
   text-align: center;
   padding: 30px 20px;
 }
@@ -151,8 +156,27 @@ section {
 
 /* Make the logo image smaller */
 .logo-image {
-  width: 48px;                  /* Set a small width for the logo */
+  width: 35px;                  /* Set a small width for the logo */
   height: auto;                 /* Keep the image ratio */
+  margin-left: 10px; /* Add some space on the left */
+}
+
+/* Make only the main heading 'charity: water' use a smaller size */
+.header-flex h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3em; /* Smaller than default */
+  margin: 0;         /* Remove extra space above/below */
+}
+
+/* Style the Sign In button in the header */
+.sign-in-button {
+  margin-left: auto;              /* Push the button to the far right */
+  color: #1a1a1a;                    /* White text */
+  padding: 8px 20px;              /* Add some padding */
+  border-radius: 5px;             /* Rounded corners */
+  text-decoration: none;          /* No underline */
+  font-family: proxima nova, Arial, sans-serif; /* Use Proxima Nova font */
+  font-size:small
 }
 
 /* 
