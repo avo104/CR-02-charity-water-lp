@@ -252,4 +252,9 @@ section {
   .impact-content {
     font-size: 1.2em; /* Slightly larger font for better readability */
   }
+
+  /* Make the impact-story section heading larger on computers */
+  .impact-story h2 {
+    font-size: 2.2em;
+  }
 }
