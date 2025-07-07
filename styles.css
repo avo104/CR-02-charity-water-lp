@@ -243,4 +243,13 @@ section {
   .impact-content p {
     order: 1;                /* Text appears second (right) */
   }
+
+  /* Make the font in the story section larger on computers */
+  .story {
+    font-size: 1.3em; /* Increase font size for better readability */
+  }
+  /* Make the font in the impact-content section larger on computers */
+  .impact-content {
+    font-size: 1.2em; /* Slightly larger font for better readability */
+  }
 }
